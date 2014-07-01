@@ -11,3 +11,4 @@ soup = BeautifulSoup((pageHtml))
 for code in soup.find_all('pre'):
     if code.get('class'):
         print code.get_text()
+        #print code
