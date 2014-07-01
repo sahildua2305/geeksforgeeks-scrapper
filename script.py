@@ -9,6 +9,5 @@ pageFile.close()
 soup = BeautifulSoup((pageHtml))
 
 for code in soup.find_all('pre'):
-    print(code.get_text())
-    if code['class']:
-        print code['class']
+    if code.get('class'):
+        print code.get_text()
